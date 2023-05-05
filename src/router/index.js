@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import InicioPrincipal from '../paginas/InicioPrincipal.vue'
 
-import listadodeusuario from '../paginas/usuarios/listadodeusuario.vue'
+import listadoTests from '../paginas/tests/listadoTests.vue'
 import informe from '../paginas/informe/informe.vue'
 import listadoResultados from '../paginas/Resultados/listadoResultados.vue'
-import listadoContacto from '../paginas/contactos/listadoContacto.vue'
+import login from '../paginas/login/login.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,9 +16,9 @@ const router = createRouter({
       component: InicioPrincipal
     },
     {
-      path: '/usuarios',
-      name: 'usuarios',
-      component: listadodeusuario
+      path: '/tests',
+      name: 'tests',
+      component: listadoTests
     },
     {
       path: '/informe',
@@ -31,9 +31,9 @@ const router = createRouter({
       component: listadoResultados
     },
     {
-      path: '/Contactos',
-      name: 'Contactos',
-      component: listadoContacto
+      path: '/login',
+      name: 'login',
+      component: login
     },
 
     {
