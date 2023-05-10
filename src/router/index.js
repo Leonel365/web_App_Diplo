@@ -6,6 +6,7 @@ import listadoTests from '../paginas/tests/listadoTests.vue'
 import informe from '../paginas/informe/informe.vue'
 import listadoResultados from '../paginas/Resultados/listadoResultados.vue'
 import login from '../paginas/login/login.vue'
+import testPsico from '../paginas/testPsico/testPsico.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,7 +36,11 @@ const router = createRouter({
       name: 'login',
       component: login
     },
-
+    {
+      path: '/testPsico',
+      name: 'testPsico',
+      component: testPsico
+    },
     {
       path: '/about',
       name: 'about',
