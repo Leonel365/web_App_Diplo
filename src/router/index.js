@@ -7,6 +7,9 @@ import informe from '../paginas/informe/informe.vue'
 import listadoResultados from '../paginas/Resultados/listadoResultados.vue'
 import login from '../paginas/login/login.vue'
 import testPsico from '../paginas/testPsico/testPsico.vue'
+import test1 from '../paginas/tests/test1/test1.vue'
+import resutadosGenerales from '../paginas/resutadosGenerales/resutadosGenerales.vue'
+import adminPrincipal from '../paginas/admin/adminPrincipal/adminPrincipal.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,6 +43,21 @@ const router = createRouter({
       path: '/testPsico',
       name: 'testPsico',
       component: testPsico
+    },
+    {
+      path: '/admin/adminPrincipal',
+      name: 'adminPrincipal',
+      component: adminPrincipal
+    },
+    {
+      path: '/tests/test1',
+      name: 'test1',
+      component: test1
+    },
+    {
+      path: '/resutadosGenerales',
+      name: 'resutadosGenerales',
+      component: resutadosGenerales
     },
     {
       path: '/about',
