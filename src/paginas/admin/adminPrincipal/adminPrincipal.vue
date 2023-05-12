@@ -1,25 +1,30 @@
 <template>
-    <h1>Bienvenido señor Admin</h1>
-    <ul>
+    <div>
+      <h1 class="text-2xl font-bold">Bienvenido señor Admin</h1>
+      <ul class="mt-4">
         <li>
-            <RouterLink to="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 md:hover:text-blue-500" aria-current="page">
-                Usuarios
-            </RouterLink>
+          <router-link to="#" class="block py-2 pr-4 pl-3 rounded hover:text-blue-500">
+            Usuarios
+          </router-link>
         </li>
         <li>
-            <RouterLink to="/tests" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 md:hover:text-blue-500" aria-current="page">
-                Test
-            </RouterLink>
+          <router-link to="/tests" class="block py-2 pr-4 pl-3 rounded hover:text-blue-500">
+            Test
+          </router-link>
         </li>
         <li>
-            <RouterLink to="../resutadosGenerales" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 md:hover:text-blue-500" aria-current="page">
-                Resultados
-            </RouterLink>
+          <router-link to="../resutadosGenerales" class="block py-2 pr-4 pl-3 rounded hover:text-blue-500">
+            Resultados
+          </router-link>
         </li>
         <li>
-            <RouterLink to="#" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0 md:hover:text-blue-500" aria-current="page">
-                Publicaciones
-            </RouterLink>
+          <router-link to="#" class="block py-2 pr-4 pl-3 rounded hover:text-blue-500">
+            Publicaciones
+          </router-link>
         </li>
-    </ul>
-</template>
+      </ul>
+    </div>
+  </template>
+  
+
+  
