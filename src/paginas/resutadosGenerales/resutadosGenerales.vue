@@ -1,8 +1,10 @@
-<!-- <script setup>
-import test1 from '../tests/test1/test1.vue'
-</script> -->
+<script setup>
+import { RouterLink } from 'vue-router'
+import NavPsicologo from '../../components/principal/NavPsicologo.vue'
+</script>
 
 <template>
+    <NavPsicologo />
     <div class="bg-gray-100">
         <div class="container mx-auto p-8">
             <h1 class="text-2xl font-bold mb-4">Resultados del Examen</h1>

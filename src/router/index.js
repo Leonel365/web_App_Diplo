@@ -6,23 +6,20 @@ import informe from '../paginas/informe/informe.vue'
 import listadoResultados from '../paginas/Resultados/listadoResultados.vue'
 import testPsico from '../paginas/testPsico/testPsico.vue'
 import test1 from '../paginas/tests/test1/test1.vue'
+import testPsicologo from '../paginas/tests/testPsicologo.vue'
 import resutadosGenerales from '../paginas/resutadosGenerales/resutadosGenerales.vue'
 import adminPrincipal from '../paginas/admin/adminPrincipal/adminPrincipal.vue'
 import registrar from '../paginas/Registrar/registrar.vue'
 import destudiante from '../paginas/Destudiante/estudiante.vue'
 import dpsicologo from '../paginas/Dpsicologo/psicologo.vue'
-<<<<<<< HEAD
+
 import listarUsers from '../paginas/Dpsicologo/users/listarUsers.vue'
 import updateUsers from '../paginas/Dpsicologo/users/updateUsers.vue'
-=======
+
 import dashboard from '../paginas/Dashboard/menu.vue'
 import logine from '../paginas/login/logine.vue'
 import loginp from '../paginas/login/loginp.vue'
-<<<<<<< HEAD
 import resultadosestudiante from '../paginas/resultadosUsuario/resultados.vue'
-=======
->>>>>>> c0858d7cced0d157897655b6202cc821f0300168
->>>>>>> 53736ad57e6eb334cbb28e0706c6671279fffab4
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,6 +33,11 @@ const router = createRouter({
       path: '/tests',
       name: 'tests',
       component: listadoTests
+    },
+    {
+      path: '/testsp',
+      name: 'testsp',
+      component: testPsicologo
     },
     {
       path: '/informe',
@@ -73,7 +75,7 @@ const router = createRouter({
       component: test1
     },
     {
-      path: '/resutadosGenerales',
+      path: '/resutados-generales',
       name: 'resutadosGenerales',
       component: resutadosGenerales
     },
@@ -81,6 +83,11 @@ const router = createRouter({
       path: '/registrar',
       name: 'registrar',
       component: registrar
+    }, 
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: dashboard
     }, 
     {
       path: '/destudiante',
@@ -94,7 +101,6 @@ const router = createRouter({
       component: dpsicologo
     },
     {
-<<<<<<< HEAD
       path: '/listarUsers',
       name: 'listarUsers',
       component: listarUsers
@@ -103,11 +109,6 @@ const router = createRouter({
       path: '/updateUsers',
       name: 'updateUsers',
       component: updateUsers
-=======
-      path: '/dashboard',
-      name: 'dashboard',
-      component: dashboard
->>>>>>> c0858d7cced0d157897655b6202cc821f0300168
     },
     {
       path: '/resultados-estudiante',

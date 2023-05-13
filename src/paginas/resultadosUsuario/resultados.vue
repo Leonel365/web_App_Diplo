@@ -23,8 +23,8 @@
                         <td class="py-2 px-4 border-b">80</td>
                         <td class="py-2 px-4 border-b">80</td>
                         <td class="py-2 px-4 border-b">80</td>
-                        <td class="py-2 px-4 border-b"><button data-modal-target="targetEl"
-                                data-modal-toggle="targetEl"
+                        <td class="py-2 px-4 border-b"><button data-modal-target="extralarge-modal"
+                                data-modal-toggle="extralarge-modal"
                                 class="block w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 type="button">
                                 Ver resultado
@@ -37,8 +37,8 @@
                         <td class="py-2 px-4 border-b">75</td>
                         <td class="py-2 px-4 border-b">75</td>
                         <td class="py-2 px-4 border-b">75</td>
-                        <td class="py-2 px-4 border-b"><button data-modal-target="targetEl"
-                                data-modal-toggle="targetEl"
+                        <td class="py-2 px-4 border-b"><button data-modal-target="extralarge-modal"
+                                data-modal-toggle="extralarge-modal"
                                 class="block w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 type="button">
                                 Ver resultado
@@ -51,8 +51,8 @@
                         <td class="py-2 px-4 border-b">60</td>
                         <td class="py-2 px-4 border-b">60</td>
                         <td class="py-2 px-4 border-b">60</td>
-                        <td class="py-2 px-4 border-b"><button data-modal-target="targetEl"
-                                data-modal-toggle="targetEl"
+                        <td class="py-2 px-4 border-b"><button data-modal-target="extralarge-modal"
+                                data-modal-toggle="extralarge-modal"
                                 class="block w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                                 type="button">
                                 Ver resultado
@@ -65,7 +65,7 @@
 
 
 
-    <div id="targetEl" tabindex="-1"
+    <div id="extralarge-modal" tabindex="-1"
         class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full max-w-7xl max-h-full">
             <!-- Modal content -->
@@ -77,7 +77,7 @@
                     </h3>
                     <button type="button"
                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                        data-modal-hide="targetEl">
+                        data-modal-hide="extralarge-modal">
                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -291,10 +291,10 @@
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="targetEl" type="button"
+                    <button data-modal-hide="extralarge-modal" type="button"
                         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
                         accept</button>
-                    <button data-modal-hide="targetEl" type="button"
+                    <button data-modal-hide="extralarge-modal" type="button"
                         class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
                 </div>
             </div>
@@ -302,41 +302,47 @@
     </div>
 </template>
 <script>
-import { Modal } from 'flowbite'
-const $targetEl = document.getElementById('modalEl');
 
-// options with default values
-const options = {
-    placement: 'bottom-right',
-    backdrop: 'dynamic',
-    backdropClasses: 'bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40',
-    closable: true,
-    onHide: () => {
-        console.log('modal is hidden');
-    },
-    onShow: () => {
-        console.log('modal is shown');
-    },
-    onToggle: () => {
-        console.log('modal has been toggled');
+export default {
+   
+        mounted() {
+            const modalButtons = Array.from(document.querySelectorAll('[data-modal-toggle]'));
+            const closeModalButtons = Array.from(document.querySelectorAll('[data-modal-hide]'));
+            const modalContainers = Array.from(document.querySelectorAll('[data-modal-target]'));
+
+            function closeModal(modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+
+            function showModal(modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+
+            modalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetModal = document.getElementById(button.dataset.modalTarget);
+                    showModal(targetModal);
+                });
+            });
+
+            closeModalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetModal = document.getElementById(button.dataset.modalHide);
+                    closeModal(targetModal);
+                });
+            });
+
+            modalContainers.forEach(container => {
+                container.addEventListener('click', event => {
+                    if (event.target === container) {
+                        closeModal(container);
+                    }
+                });
+            });
+        }
     }
-};
 
-const modal = new Modal($targetEl, options);
-// export default {
-//     data() {
-//         return {
-//             isModalOpen: false
-//         };
-//     },
-//     methods: {
-//         toggleModal() {
-//             this.isModalOpen = !this.isModalOpen;
-//         },
-//         closeModal() {
-//             this.isModalOpen = false;
-//         }
-//     }
 
-// }
 </script>
