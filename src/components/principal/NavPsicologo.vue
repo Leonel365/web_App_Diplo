@@ -18,10 +18,17 @@
                                       md:border-0 md:mx-2 md:px-3" aria-current="page">Realizar test</a>
                 </li>
                 <li>
+                    <a href="#" class="transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 
+                                        block py-2
+                                    text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-700 hover:text-gray-200
+                                      md:border-0 md:mx-2 md:px-3" aria-current="page">Ver usuarios</a>
+                </li>
+              
+                <li>
                     <a href="#" class="transition hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300  
                                         block py-2
                                     text-gray-100 border-b border-gray-400 hover:rounded-md text-sm hover:bg-gray-700 hover:text-gray-200
-                                      md:border-0 md:mx-2 md:px-3" aria-current="page">Resultados</a>
+                                      md:border-0 md:mx-2 md:px-3" aria-current="page">Ver resultados</a>
                 </li>
            
             </ul>
