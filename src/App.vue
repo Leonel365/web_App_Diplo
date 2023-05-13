@@ -5,10 +5,11 @@ import Footer from './components/principal/Footer.vue'
 </script>
 
 <template>
+  <div>
   <HeaderPrincipal />
-
-  <div class="bg-gray-400 py-50">
-    <div class="bg-white container mx-auto px-5 py-4 rounded-xl">
+</div>
+  <div class="bg-gray-200  py-8">
+    <div class="bg-white container  mx-auto px-5  py-4 rounded-md">
       <RouterView />
     </div>
   </div>
