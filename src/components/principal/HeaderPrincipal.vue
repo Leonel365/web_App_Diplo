@@ -37,7 +37,7 @@ import { RouterLink } from 'vue-router'
             </RouterLink>
           </li>
           <li>
-            <RouterLink to="/login"
+            <RouterLink to="/dashboard"
               class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">
               Login
             </RouterLink>
