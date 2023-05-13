@@ -14,6 +14,7 @@ import dpsicologo from '../paginas/Dpsicologo/psicologo.vue'
 import dashboard from '../paginas/Dashboard/menu.vue'
 import logine from '../paginas/login/logine.vue'
 import loginp from '../paginas/login/loginp.vue'
+import resultadosestudiante from '../paginas/resultadosUsuario/resultados.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -88,6 +89,11 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: dashboard
+    },
+    {
+      path: '/resultados-estudiante',
+      name: 'resultadosestudiante',
+      component: resultadosestudiante
     },
 
 
