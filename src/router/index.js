@@ -12,6 +12,8 @@ import adminPrincipal from '../paginas/admin/adminPrincipal/adminPrincipal.vue'
 import registrar from '../paginas/Registrar/registrar.vue'
 import destudiante from '../paginas/Destudiante/estudiante.vue'
 import dpsicologo from '../paginas/Dpsicologo/psicologo.vue'
+import listarUsers from '../paginas/Dpsicologo/users/listarUsers.vue'
+import updateUsers from '../paginas/Dpsicologo/users/updateUsers.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -76,6 +78,16 @@ const router = createRouter({
       path: '/dpsicologo',
       name: 'psicologo',
       component: dpsicologo
+    },
+    {
+      path: '/listarUsers',
+      name: 'listarUsers',
+      component: listarUsers
+    },
+    {
+      path: '/updateUsers',
+      name: 'updateUsers',
+      component: updateUsers
     },
 
 
