@@ -1,4 +1,9 @@
+<script setup>
+import NavPrincipal from '../../components/principal/NavPrincipal.vue';
+
+</script>
 <template>
+    <NavPrincipal />
     <h1 class="text-4xl text-center text-gray-700 ">Listado de Tests</h1>
     <br>
 

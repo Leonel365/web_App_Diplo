@@ -11,10 +11,10 @@
       <input type="text" id="TestPsicosocial_idTestPsicosocial" name="TestPsicosocial_idTestPsicosocial" title="" hidden><br>
 
       <label for="numPersonasVivienda" title="" class="mb-4 font-semibold text-gray-900">Número de personas en la vivienda:</label><br>
-      <input type="number" id="numPersonasVivienda" name="numPersonasVivienda" title="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required><br>
+      <input type="number" id="numPersonasVivienda" name="numPersonasVivienda" title="" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required><br>
 
       <label for="estrato" title="" class="mb-4 font-semibold text-gray-900">Estrato:</label><br>
-      <select id="estrato" name="estrato" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+      <select id="estrato" name="estrato" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required>
         <option value="">Seleccionar...</option>
         <option value="estrato 1" title="">Estrato 1 Bajo-bajo</option>
         <option value="estrato 2" title="">Estrato 2 Bajo</option>
@@ -25,7 +25,7 @@
       </select><br>
 
       <label for="estadoCivil" title="" class="mb-4 font-semibold text-gray-900">Estado civil:</label><br>
-      <select id="estadoCivil" name="estadoCivil" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+      <select id="estadoCivil" name="estadoCivil" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required>
         <option value="">Seleccionar...</option>
         <option value="estadoCivil soltero" title="">Soltero/a</option>
         <option value="estadoCivil casado" title="">Casado/a</option>
@@ -36,7 +36,7 @@
       </select><br>
 
       <label for="personasCargo" title="" class="mb-4 font-semibold text-gray-900">Personas a cargo:</label><br>
-      <input type="number" id="personasCargo" name="personasCargo" title="" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required><br>
+      <input type="number" id="personasCargo" name="personasCargo" title="" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required><br>
 
       <label for="situacionEconomica" title="" class="mb-4 font-semibold text-gray-900">Situacion economica:</label><br>
       <fieldset >
@@ -55,8 +55,8 @@
       </fieldset><br>
 
       <label for="actitud" title="" class="mb-4 font-semibold text-gray-900">Actitud:</label><br>
-      <select id="actitud" name="actitud" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
-        <option value="">Seleccionar...</option>
+      <select id="actitud" name="actitud" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required>
+        <option value="">Seleccionar... (posiciona el cursor para ver la descripción)</option>
         <option value="actitudManipuladora" title="es aquella que necesita controlar, cambiar y deformar los comportamientos o percepciones de los demás">Actitud manipuladora</option>
         <option value="actitudPesimista" title="se relaciona generalmente con un alto nivel de tolerancia o flexibilidad, siendo benevolente comienza a valorar y permitir transgresiones de las propias valoraciones">Actitud pesimista</option>
         <option value="actitudSumisa" title="En este tipo de actitud las personas se postulan como objetos permitiendo así que los demás sean los sujetos responsables y dueños de sus decisiones">Actitud sumisa</option>
@@ -80,7 +80,7 @@
       </select><br>
 
       <label for="edad" class="mb-4 font-semibold text-gray-900">Edad:</label><br>
-      <input type="number" id="edad" name="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required><br>
+      <input type="number" id="edad" name="edad" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required><br>
       
       <label for="identSex" class="mb-4 font-semibold text-gray-900">Genero:</label><br>
       <fieldset>

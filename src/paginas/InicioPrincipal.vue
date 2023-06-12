@@ -9,12 +9,7 @@ import { RouterLink } from 'vue-router'
                 </div>
                 <div class="col-end-6 col-span-3">
                         <h1 class="text-3xl font-bold text-gray-600 text-center">¿Qué es la adicción a los videojuegos?</h1>
-                        <p class="text-justify"><br>La definición de Adicción a los videojuegos o el Trastorno de juego por
-                                internet consiste en un patrón de juego persistente y recurrente que provoca un deterioro o
-                                malestar clínicamente significativo durante un periodo mínimo de un año. Esta adicción no se
-                                define por el número de horas que se juega a los videojuegos al día o a la semana, como muchos
-                                padres nos preguntan. Se define por las consecuencias y repercusión que tiene en las distintas
-                                áreas de funcionamiento de la persona.</p>
+                        <p class="text-justify"><br>La definición de Adicción a los videojuegos o el Trastorno de juego por internet consiste en un patrón de juego persistente y recurrente que provoca un deterioro o malestar clínicamente significativo durante un periodo mínimo de un año. Esta adicción no se define por el número de horas que se juega a los videojuegos al día o a la semana, como muchos padres nos preguntan. Se define por las consecuencias y repercusión que tiene en las distintas áreas de funcionamiento de la persona.</p>
                 </div>
                 <div class="col-end-6 col-span-4">
                         <div>
@@ -23,25 +18,27 @@ import { RouterLink } from 'vue-router'
                         <br>
                 </div>
         </div>
-        <div class="grid grid-cols-5 gap-5">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-5">
 
-                <div><img src="@/assets/img/v1.jpg" class="h-40 w-60" /></div>
-                <div><img src="@/assets/img/v2.jpg" class="h-40 w-60" /></div>
-                <div><img src="@/assets/img/v3.jpg" class="h-40 w-60" /></div>
-                <div><img src="@/assets/img/v4.jpeg" class="h-40 w-60" /></div>
-                <div><img src="@/assets/img/v5.png" class="h-40 w-60" /></div>
+                  <div class="w-64 h-full"><img src="@/assets/img/v1.jpg" class="h-40 w-60 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" /></div>
+                  <div class="w-64 h-full"><img src="@/assets/img/v2.jpg" class="h-40 w-60 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" /></div>
+                  <div class="w-64 h-full"><img src="@/assets/img/v3.jpg" class="h-40 w-60 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" /></div>
+                  <div class="w-64 h-full"><img src="@/assets/img/v4.jpeg" class="h-40 w-60 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" /></div>
+                  <div class="w-64 h-full"><img src="@/assets/img/v5.png" class="h-40 w-60 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg" /></div>
+          </div>
         </div>
         <div class="mt-9">
                 <div
-                        class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+                        class="rounded-lg border-2 relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
                         <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
                                 aria-hidden="true">
-                                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#7CFC00] to-[#32CD32] opacity-30"
+                                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0A3A40] to-[#042326] opacity-20"
                                         style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
                         </div>
                         <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
                                 aria-hidden="true">
-                                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#7CFC00] to-[#32CD32] opacity-30"
+                                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0A3A40] to-[#042326] opacity-20"
                                         style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
                         </div>
                         <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -64,4 +61,26 @@ import { RouterLink } from 'vue-router'
                         </button>
                 </div>
         </div>
-</div></template>
+</div>
+</template>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+
+</script>
+<style>
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+</style>
+

@@ -20,6 +20,7 @@ import dashboard from '../paginas/Dashboard/menu.vue'
 import logine from '../paginas/login/logine.vue'
 import loginp from '../paginas/login/loginp.vue'
 import resultadosestudiante from '../paginas/resultadosUsuario/resultados.vue'
+import consultaTestUser from '../paginas/resultadosUsuario/consultaTestUser/consultaTestUser.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -115,7 +116,11 @@ const router = createRouter({
       name: 'resultadosestudiante',
       component: resultadosestudiante
     },
-
+    {
+      path: '/resultados-estudiante/consultaTestUser',
+      name: 'consultaTestUser',
+      component: consultaTestUser
+    },
 
     {
       path: '/about',
