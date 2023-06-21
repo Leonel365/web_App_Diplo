@@ -5,7 +5,7 @@ import NavPsicologo from '../../../components/principal/NavPsicologo.vue'
 <template>
    <NavPsicologo />
 <p><br></p>
-<h1 class="text-center">Listado de Usuarios</h1>
+<h1 class="text-2xl font-bold mb-4">Lista de Usuarios</h1>
 <br>
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     

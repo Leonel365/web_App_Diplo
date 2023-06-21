@@ -12,7 +12,7 @@ import NavPrincipal from '../../components/principal/NavPrincipal.vue'
 <html>
 
 <body>
-    <h1 class="text-center"><strong>¿Son Adictivos los Videojuegos?</strong></h1>
+  <h1 class="text-2xl font-bold mb-4">¿Eres adictivos a los videos juegos? </h1>
 
 
   <p class="justificado">Los videojuegos son potencialmente adictivos. Esto no significa ni que los videojuegos 
