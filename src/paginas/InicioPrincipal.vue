@@ -65,7 +65,7 @@ import { RouterLink } from 'vue-router'
 </template>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new swiper('.swiper-container', {
       slidesPerView: 4,
       spaceBetween: 10,
       navigation: {
